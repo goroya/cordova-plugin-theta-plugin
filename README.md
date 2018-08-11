@@ -1,6 +1,6 @@
 # cordova-plugin-theta-plugin
 
-## Docments
+## Documents
 
 Please refer below link.
 [cordova-plugin-theta-plugin docment](/packages/theta-plugin/README.md)
