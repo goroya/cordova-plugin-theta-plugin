@@ -10,89 +10,89 @@ I wrapped the theta-plugin-sdk(https://github.com/ricohapi/theta-plugin-sdk) wit
 
 # API Reference
 
-## theta.onKeyDownCallback(successCallback, errorCallback)
+## window.plugins.theta.onKeyDownCallback(successCallback, errorCallback)
 - successCallback(keyCode)  
   keyCode: 27: Shutter Button, 130: Mode Button, 284: Wireless Button can be specified
 
-## theta.onKeyUpCallback(successCallback, errorCallback)
+## window.plugins.theta.onKeyUpCallback(successCallback, errorCallback)
 - successCallback(keyCode)  
   keyCode: 27: Shutter Button, 130: Mode Button, 284: Wireless Button can be specified
 
-## theta.onKeyLongPressCallback(successCallback, errorCallback)
+## window.plugins.theta.onKeyLongPressCallback(successCallback, errorCallback)
 - successCallback(keyCode)  
   keyCode: 27: Shutter Button, 130: Mode Button, 284: Wireless Button can be specified
 
-## theta.notificationCameraOpen() : return Promise
+## window.plugins.theta.notificationCameraOpen() : return Promise
 
-## theta.notificationCameraClose() : return Promise
+## window.plugins.theta.notificationCameraClose() : return Promise
 
-## theta.notificationAudioShutter() : return Promise
+## window.plugins.theta.notificationAudioShutter() : return Promise
 
-## theta.notificationAudioOpen() : return Promise
+## window.plugins.theta.notificationAudioOpen() : return Promise
 
-## theta.notificationAudioClose() : return Promise
+## window.plugins.theta.notificationAudioClose() : return Promise
 
-## theta.notificationAudioMovStart() : return Promise
+## window.plugins.theta.notificationAudioMovStart() : return Promise
 
-## theta.notificationAudioMovStop() : return Promise
+## window.plugins.theta.notificationAudioMovStop() : return Promise
 
-## theta.notificationAudioSelf() : return Promise
+## window.plugins.theta.notificationAudioSelf() : return Promise
 
-## theta.notificationAudioWarning() : return Promise
+## window.plugins.theta.notificationAudioWarning() : return Promise
 
-## theta.notificationLed3Show(ledColor: string) : return Promise
+## window.plugins.theta.notificationLed3Show(ledColor: string) : return Promise
 - ledColor: "RED", "GREEN",  "BLUE", "CYAN", "MAGENTA", "YELLOW", "WHITE"  
 
-## theta.notificationLedShow(ledName: string, ledColor: string, period: number) : return Promise
+## window.plugins.theta.notificationLedShow(ledName: string, ledColor: string, period: number) : return Promise
 - ledName: "LED3", "LED4", "LED5", "LED6", "LED7", "LED8"  
 - ledColor: "RED", "GREEN",  "BLUE", "CYAN", "MAGENTA", "YELLOW", "WHITE"
 - period: 250-2000 (msec)
 
-## theta.notificationLedBlink(ledName: string) : return Promise
+## window.plugins.theta.notificationLedBlink(ledName: string) : return Promise
 - ledName: "LED3", "LED4", "LED5", "LED6", "LED7", "LED8"  
 
-## theta.notificationLedHide(ledName: string) : return Promise
+## window.plugins.theta.notificationLedHide(ledName: string) : return Promise
 - ledName: "LED3", "LED4", "LED5", "LED6", "LED7", "LED8"  
 
-## theta.notificationWlanOff() : return Promise
+## window.plugins.theta.notificationWlanOff() : return Promise
 
-## theta.notificationWlanAp() : return Promise
+## window.plugins.theta.notificationWlanAp() : return Promise
 
-## theta.notificationWlanCl() : return Promise
+## window.plugins.theta.notificationWlanCl() : return Promise
 
-## theta.notificationDatabaseUpdate(targets: string[]) : return Promise
+## window.plugins.theta.notificationDatabaseUpdate(targets: string[]) : return Promise
 
-## theta.notificationSuccess() : return Promise
+## window.plugins.theta.notificationSuccess() : return Promise
 
-## theta.notificationError(message: string) : return Promise
+## window.plugins.theta.notificationError(message: string) : return Promise
 - message: set error message
 
-## theta.notificationErrorOccured() : return Promise
+## window.plugins.theta.notificationErrorOccured() : return Promise
 
 # Under development API (It is still under development & debugging)
 
 These APIs are still being tested.  
 So I will not recommend using it.
 
-## theta.setAudioBformat() : return Promise
+## window.plugins.theta.setAudioBformat() : return Promise
 
-## theta.setAudioMonaural() : return Promise
+## window.plugins.theta.setAudioMonaural() : return Promise
 
-## theta.setMicSelectAuto() : return Promise
+## window.plugins.theta.setMicSelectAuto() : return Promise
 
-## theta.setMicSelectInternal() : return Promise
+## window.plugins.theta.setMicSelectInternal() : return Promise
 
-## theta.setMicSelectExternal() : return Promise
+## window.plugins.theta.setMicSelectExternal() : return Promise
 
-## theta.setMicSurroundVolumeLevelNormal() : return Promise
+## window.plugins.theta.setMicSurroundVolumeLevelNormal() : return Promise
 
-## theta.setMicSurroundVolumeLevelLarge() : return Promise
+## window.plugins.theta.setMicSurroundVolumeLevelLarge() : return Promise
 
-## theta.setShootingMode() : return Promise
+## window.plugins.theta.setShootingMode() : return Promise
 
-## theta.setStitching() : return Promise
+## window.plugins.theta.setStitching() : return Promise
 
-## theta.setExposureMode() : return Promise
+## window.plugins.theta.setExposureMode() : return Promise
 
 # Example Code
 
