@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-theta-plugin",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "description": "Cordova Theta Plugin",
   "scripts": {},
   "cordova": {
