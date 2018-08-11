@@ -144,5 +144,5 @@ app.initialize();
 
 [simple_example](/packages/simple_example/README.md)
 
-[example_vue](/packages/theta-plugin.md/README.md)
+[example_vue](/packages/theta-plugin/README.md)
 
