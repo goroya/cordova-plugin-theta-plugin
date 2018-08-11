@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-theta-plugin" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>theta-plugin</name>
+    <description>Theta Plugin</description>
+    <author>goroya.io</author>
+    <license>MIT</license>
+    <js-module name="theta-plugin" src="www/ThetaPlugin.js">
+        <clobbers target="theta" />
+    </js-module>
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="ThetaPlugin">
+                <param name="android-package" value="org.goroyaio.plugins.ThetaPlugin"/>
+            </feature>
+        </config-file>
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.CAMERA" />
+            <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+            <uses-permission android:name="android.permission.RECORD_VIDEO_BACKGROUND"/>
+            <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+        </config-file>
+        <framework src="com.android.support:support-annotations:27.1.1" />
+        <source-file src="src/android/org/goroyaio/plugins/ThetaPlugin.java" target-dir="src/org/goroyaio/plugins"/>
+        <source-file src="src/android/com/theta360/pluginlibrary/callback/KeyCallback.java" target-dir="src/com/theta360/pluginlibrary/callback"/>
+        <source-file src="src/android/com/theta360/pluginlibrary/callback/TakePictureCallback.java" target-dir="src/com/theta360/pluginlibrary/callback"/>
+        <source-file src="src/android/com/theta360/pluginlibrary/receiver/KeyReceiver.java" target-dir="src/com/theta360/pluginlibrary/receiver"/>
+        <source-file src="src/android/com/theta360/pluginlibrary/values/ExitStatus.java" target-dir="src/com/theta360/pluginlibrary/values"/>
+        <source-file src="src/android/com/theta360/pluginlibrary/values/LedColor.java" target-dir="src/com/theta360/pluginlibrary/values"/>
+        <source-file src="src/android/com/theta360/pluginlibrary/values/LedTarget.java" target-dir="src/com/theta360/pluginlibrary/values"/>
+        <source-file src="src/android/com/theta360/pluginlibrary/UncaughtException.java" target-dir="src/com/theta360/pluginlibrary"/>
+    </platform>
+</plugin>
