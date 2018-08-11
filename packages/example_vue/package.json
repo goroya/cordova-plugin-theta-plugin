@@ -2,7 +2,7 @@
     "private": "true",
     "name": "com.goroya.examplevue",
     "displayName": "example_vue",
-    "version": "1.0.0",
+    "version": "0.1.0",
     "description": "A sample Apache Cordova application that responds to the deviceready event.",
     "main": "index.js",
     "scripts": {

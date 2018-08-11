@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-theta-plugin",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Cordova Theta Plugin",
   "scripts": {},
   "cordova": {
@@ -25,7 +25,5 @@
   ],
   "author": "goroya.io",
   "license": "MIT",
-  "homepage": "https://github.com/goroya/cordova-plugin-theta-plugin",
-  "devDependencies": {},
-  "dependencies": {}
+  "homepage": "https://github.com/goroya/cordova-plugin-theta-plugin"
 }
