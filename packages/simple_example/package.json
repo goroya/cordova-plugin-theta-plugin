@@ -1,4 +1,5 @@
 {
+    "private": "true",
     "name": "com.goroya.io.theta_pluginsimple_example",
     "displayName": "simple_example",
     "version": "0.1.2",
