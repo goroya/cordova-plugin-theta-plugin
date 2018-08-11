@@ -15,8 +15,8 @@
     "license": "Apache-2.0",
     "dependencies": {
         "bootstrap-vue": "^2.0.0-rc.11",
-        "cordova-android": "7.0.0",
-        "cordova-browser": "5.0.3",
+        "cordova-android": "^7.1.1",
+        "cordova-browser": "^5.0.4",
         "cordova-custom-config": "^5.0.2",
         "cordova-plugin-android-permissions": "^1.0.0",
         "cordova-plugin-theta-plugin": "file:../theta-plugin",
@@ -39,11 +39,11 @@
         ]
     },
     "devDependencies": {
-        "@vue/component-compiler-utils": "^2.1.0",
+        "@vue/component-compiler-utils": "^2.1.2",
         "babel-preset-env": "^1.7.0",
         "babel-preset-vue": "^2.0.2",
         "cordova": "^8.0.0",
-        "node-sass": "^4.9.2",
+        "node-sass": "^4.9.3",
         "parcel-bundler": "^1.9.7",
         "parcel-plugin-change-file": "^1.2.7",
         "rimraf": "^2.6.2",
