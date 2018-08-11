@@ -209,3 +209,6 @@ fabric.properties
 /packages/example_vue/www/*
 /packages/example_vue/plugins
 /packages/example_vue/platforms
+/packages/simple_example/plugins
+/packages/simple_example/platforms
+/packages/simple_example/www

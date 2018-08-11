@@ -123,8 +123,9 @@ const app = {
            await window.plugins.theta.notificationAudioSelf().catch((e) => { console.error(e) });
            await window.plugins.theta.notificationAudioWarning().catch((e) => { console.error(e) });
            await window.plugins.theta.notificationLed3Show("RED").catch((e) => { console.error(e) });
-           await window.plugins.theta.notificationLedShow("LED1").catch((e) => { console.error(e) });
-           await window.plugins.theta.notificationLedBlink("LED2", "RED", 2000).catch((e) => { console.error(e) });
+           await window.plugins.theta.notificationLedShow("LED3").catch((e) => { console.error(e) });
+           await window.plugins.theta.notificationLedBlink("LED3", "RED", 2000).catch((e) => { console.error(e) });
+           await window.plugins.theta.notificationLedHide("LED3").catch((e) => { console.error(e) });
            await window.plugins.theta.notificationDatabaseUpdate(["/sdcard/DCIM"]).catch((e) => { console.error(e) });
            await window.plugins.theta.notificationSuccess().catch((e) => { console.error(e) });
            await window.plugins.theta.notificationError("message").catch((e) => { console.error(e) });
@@ -141,4 +142,7 @@ app.initialize();
 
 ## Vue.js Example
 
+[simple_example](/packages/simple_example/README.md)
+
 [example_vue](/packages/theta-plugin.md/README.md)
+

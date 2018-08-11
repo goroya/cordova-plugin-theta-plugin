@@ -1,0 +1,33 @@
+{
+    "name": "com.goroya.io.theta_pluginsimple_example",
+    "displayName": "simple_example",
+    "version": "1.0.0",
+    "description": "A sample Apache Cordova application that responds to the deviceready event.",
+    "main": "index.js",
+    "scripts": {
+        "build": "parcel build src/index.html -d www --no-minify --no-cache --public-url \"./\"",
+        "android": "rimraf www && npm run build && cordova run android"
+    },
+    "author": "Apache Cordova Team",
+    "license": "Apache-2.0",
+    "dependencies": {
+        "cordova-android": "7.0.0",
+        "cordova-plugin-theta-plugin": "^0.1.1",
+        "cordova-plugin-whitelist": "^1.3.3"
+    },
+    "cordova": {
+        "plugins": {
+            "cordova-plugin-whitelist": {},
+            "cordova-plugin-theta-plugin": {}
+        },
+        "platforms": [
+            "android"
+        ]
+    },
+    "devDependencies": {
+        "cordova": "^8.0.0",
+        "parcel-bundler": "^1.9.7",
+        "parcel-plugin-change-file": "^1.2.7",
+        "rimraf": "^2.6.2"
+    }
+}
